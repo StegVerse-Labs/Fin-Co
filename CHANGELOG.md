@@ -5,6 +5,9 @@
 - Clarified separation of Core, Structural, Continuity, and Epistemic safeguards
 - Eliminated outdated “Six Invariants” framing
 - Strengthened interpretive clarity without altering invariant content
+- Updated INVARIANTS.md to include 13–15 as canonical
+- Added ARCHITECTURAL_INTENT.md
+- Synchronized invariant language across documents
 
 ## v1.4.0 — Continuity
 - Added formal Observer Recognition clause to Constitutional Preamble
