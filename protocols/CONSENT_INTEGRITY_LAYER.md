@@ -1,65 +1,89 @@
 Consent Integrity Layer — Human Decision Protection Framework
 
-Version: v1.0.0
+Version: v1.1.0
 Applies To: Fin-Co v1.5.0+
+Depends On:
+	•	EPHEMERALITY_PROFILE.md
+	•	ECONOMIC_CONSTITUTION.md
+	•	VERSIONING_COVENANT.md
+
 Status: Mandatory Protective Constraint
-Scope: User consent, transfer authorization, coercion resistance, social engineering defense
 
 ⸻
 
 1. Purpose
 
-The Consent Integrity Layer protects users from:
-	•	Coercion
-	•	Social engineering
-	•	Deepfake impersonation
-	•	Fraud manipulation
-	•	Panic-driven misjudgment
-	•	High-pressure transfer scenarios
+The Consent Integrity Layer protects user decision-making in high-friction environments where:
+	•	Coercion is plausible
+	•	Social engineering is advanced
+	•	Deepfake impersonation exists
+	•	Device compromise is possible
+	•	Panic behavior can cause systemic instability
 
-Cryptographic security protects keys.
-Consent integrity protects decisions.
+Cryptographic custody (Economic Constitution) protects value.
+Ephemerality (Ephemerality Profile) protects identity.
+Consent Integrity protects human judgment.
+
+All three layers are required for system coherence.
 
 ⸻
 
-2. Core Principle
+2. Layer Interdependence
 
-Authorization must be intentional, legible, reversible (when safe), and resistant to psychological manipulation.
+This document MUST be interpreted in coordination with:
 
-The system MUST protect human judgment without replacing it.
+2.1 Ephemerality Profile
+	•	Spend authorizations are ephemeral.
+	•	Identity linkage decays.
+	•	Telemetry is minimized.
+	•	No master override exists.
+
+Consent Integrity must never introduce mechanisms that undermine ephemerality.
+
+⸻
+
+2.2 Economic Constitution
+	•	No discretionary override.
+	•	Entropy rules remain mechanical.
+	•	Backstop triggers are automatic.
+	•	No scoring systems permitted.
+
+Consent friction must not alter economic invariants.
+
+⸻
+
+3. Core Principle
+
+Authorization must be intentional, legible, reversible (where safe), and resistant to psychological manipulation.
 
 AI may advise.
-AI may not override.
+AI may not execute, block, or override.
+
+No decision authority may migrate from user to system.
 
 ⸻
 
-3. Consent Protection Objectives
+4. Risk-Tiered Transfer Model (Aligned with Ephemeral Authorization)
 
-The system MUST:
-	•	Reduce irreversible harm from manipulated consent.
-	•	Introduce friction proportional to risk.
-	•	Preserve user agency.
-	•	Avoid paternalistic blocking.
-	•	Maintain dignity under stress.
-	•	Avoid creating surveillance scoring regimes.
+All transfers operate within the Ephemeral Authorization constraints defined in EPHEMERALITY_PROFILE.md.
+
+Consent Integrity operates on top of that layer.
 
 ⸻
-
-4. Risk-Tiered Transfer Friction Model
-
-All transfers MUST be classified into risk tiers.
 
 4.1 Risk Factors (Non-Exhaustive)
-	•	Transfer size relative to balance
+
+Risk signals MAY include:
+	•	Transfer amount relative to balance
 	•	Vault-to-pocket movement
 	•	First-time recipient
-	•	Recently changed recipient address
-	•	Cross-epoch unfamiliar pattern
-	•	Time-of-day anomaly
-	•	Rapid successive transfers
-	•	External flagged scam patterns (federated alerts)
+	•	Address mutation
+	•	High anomaly pattern
+	•	Federated scam pattern match
+	•	Rapid sequential attempts
+	•	Cross-epoch unfamiliar behavior (without permanent linkage)
 
-No single factor triggers blocking.
+No single signal may cause automatic denial.
 
 ⸻
 
@@ -67,273 +91,213 @@ No single factor triggers blocking.
 
 Tier 0 — Routine
 	•	Small pocket transaction
-	•	Frequent recipient
-	•	Low anomaly
+	•	Known recipient
+	•	No anomaly
 
 Friction:
-	•	Standard confirmation only
+	•	Standard confirmation
 
 ⸻
 
 Tier 1 — Elevated
-	•	Moderate amount
+	•	Moderate anomaly
 	•	New recipient
-	•	Slight anomaly
+	•	Higher % of pocket
 
 Friction:
-	•	Human-readable recipient verification
-	•	Explicit “why this is elevated” explanation
-	•	5–15 second reflection delay
+	•	Human-readable verification
+	•	Explicit explanation
+	•	Short reflection delay
 
 ⸻
 
 Tier 2 — High Risk
-	•	Large % of vault
-	•	First-time vault drain
-	•	Pattern matches known scam template
+	•	Significant vault drain
+	•	Large % of holdings
+	•	Scam-pattern correlation
 
 Friction:
-	•	Mandatory reflection delay (configurable 1–24 hours)
-	•	AI advisory explanation
-	•	Optional “delay by default” toggle
-
-AI must explain:
-“Large transfer relative to your history.”
+	•	Mandatory delay
+	•	AI explanation
+	•	Optional delay extension
+	•	Vault authorization still bound by TTL and cap (Ephemerality Profile §6)
 
 ⸻
 
 Tier 3 — Extreme
 	•	Near-total vault drain
-	•	High anomaly + external scam pattern
-	•	Coercion indicators (rapid forced behavior)
+	•	Multi-signal anomaly
+	•	Coercion indicators
 
 Friction:
-	•	Time-delay enforced
-	•	Optional trusted contact confirmation
-	•	Duress mode prompt available
+	•	Enforced time-delay
+	•	Duress mode prompt (see §7)
+	•	Optional trusted contact confirmation (user-controlled)
 
 AI must not block.
-User may override after delay.
+User override remains possible after delay.
 
 ⸻
 
-5. Human-Readable Recipient Verification
+5. Alignment With Ephemeral Authorization
 
-All transfers MUST display:
-	•	Recipient alias (if exists)
-	•	Human-readable fingerprint
-	•	Visual confirmation code
-	•	Optional QR visual confirmation
+The following MUST remain true:
+	•	All spend authority is time-bound (Ephemerality §6).
+	•	Consent friction cannot extend beyond authorization TTL.
+	•	Delays cannot become de facto permanent freezes.
+	•	No consent layer mechanism may require centralized review.
 
-This prevents address substitution attacks.
-
-Raw addresses alone are insufficient.
+Consent Integrity must not mutate into control authority.
 
 ⸻
 
-6. Default Delay for Vault Drains
+6. Human-Readable Recipient Verification
 
-Vault-to-pocket movements above defined threshold MUST:
-	•	Trigger delay
-	•	Require second confirmation
-	•	Provide risk explanation
+To prevent substitution attacks:
+	•	Recipient alias or visual fingerprint required
+	•	QR visual match recommended
+	•	No raw address-only confirmation
+	•	Confirmation UX must be stable across epochs
 
-Delay window MUST be:
-	•	User configurable
-	•	Bounded by protocol maximum
-
-Immediate irreversible vault drains are prohibited.
+Ephemeral identity rotation must not reduce clarity of recipient verification.
 
 ⸻
 
-7. AI Advisory Constraints
+7. Duress Mode (Cross-Referenced With Ephemerality)
 
-AI entity MAY:
-	•	Explain risk
-	•	Simulate outcomes
-	•	Suggest delay
-	•	Show historical context
-	•	Offer scam education
+See EPHEMERALITY_PROFILE.md §7.
 
-AI entity MUST NOT:
-	•	Block transfer
-	•	Modify transfer
-	•	Escalate to authority
-	•	Assign risk score
-	•	Penalize future privileges
+Consent Integrity requirements:
+	•	Duress mode must not reveal activation.
+	•	Duress mode must not alter entropy or multiplier.
+	•	Duress mode must not create a behavioral record.
+	•	Recovery must require threshold keys.
 
-No hidden scoring allowed.
+Consent Integrity may prompt duress mode but never auto-activate.
 
 ⸻
 
-8. Anti-Scam Pattern Layer
+8. Federated Scam Detection (Privacy-Constrained)
 
-Federated learning MAY detect scam patterns.
+Pattern alerts may be generated via federated learning.
 
-If pattern detected:
-	•	Users receive alert
-	•	Alert includes explanation
-	•	No identity of reporter disclosed
-	•	No centralized reporting authority required
+Requirements:
+	•	No raw transaction export
+	•	No central behavioral scoring
+	•	No identity aggregation
+	•	Opt-out participation allowed
+	•	Alerts must be explanatory
 
-Participation in pattern sharing MUST remain opt-out.
-
-⸻
-
-9. Duress and Coercion Response
-
-9.1 Duress Indicators
-
-System MAY detect:
-	•	Rapid sequential attempts
-	•	Sudden vault drain attempts
-	•	Device biometrics mismatch
-	•	Panic interaction patterns
-
-Detection must remain advisory.
+Federated learning must comply with Ephemerality telemetry constraints.
 
 ⸻
 
-9.2 Duress Mode Trigger
-
-User MAY activate duress mode manually.
-
-Duress mode MUST:
-	•	Present decoy wallet
-	•	Delay vault access
-	•	Not signal activation
-	•	Not destroy funds
-	•	Require threshold recovery for restoration
-
-⸻
-
-10. Reversibility Principles
-
-If settlement not yet finalized:
-	•	User MAY cancel within delay window
-
-If finalized:
-	•	No forced reversal authority exists
-	•	No admin override
-	•	No central freeze
-
-System preserves sovereignty over reversibility convenience.
-
-⸻
-
-11. No Reputation or Behavioral Scoring
+9. No Reputation, Credit, or Behavioral Scoring
 
 The Consent Integrity Layer MUST NOT:
-	•	Store user risk scores
-	•	Influence multiplier
-	•	Influence entropy
-	•	Influence buffer eligibility
-	•	Affect financial privileges
+	•	Store persistent risk profiles
+	•	Influence entropy rates
+	•	Influence backstop access
+	•	Influence multiplier eligibility
+	•	Influence group verification
 	•	Rank users
-	•	Publicly label risk categories
+	•	Penalize opt-out participants
 
-Protection must never evolve into classification.
-
-⸻
-
-12. Consent Auditability
-
-All high-tier friction events MUST:
-	•	Log reason category (not raw telemetry)
-	•	Be visible to user locally
-	•	Not expose personal patterns publicly
-	•	Not create central behavioral archive
-
-User may view:
-“Why did I receive this warning?”
+Protection must never evolve into stratification.
 
 ⸻
 
-13. Crisis Mode Adaptation
+10. Crisis Mode Adaptation (Mechanical Only)
 
-During declared systemic crisis (mechanically triggered):
-	•	Risk thresholds MAY temporarily lower
-	•	Vault delays MAY extend
-	•	AI advisory frequency MAY increase
+In declared crisis (see Economic Constitution):
+	•	Risk thresholds MAY temporarily lower.
+	•	Vault delay windows MAY extend.
+	•	Reflection delays MAY increase.
 
 All adjustments MUST:
-	•	Be rule-based
+	•	Be rule-triggered
 	•	Be time-bound
 	•	Be publicly documented
-	•	Not require discretionary approval
+	•	Not require discretionary review
+
+No “temporary emergency override” may introduce centralized authority.
 
 ⸻
 
-14. Prohibited Mechanisms
+11. Consent Auditability (User-Level Only)
 
-The following are constitutionally prohibited:
-	•	Mandatory AI approval
-	•	Automatic transaction blocking
-	•	Central fraud override key
-	•	Reputation gating
-	•	Forced identity exposure
-	•	Behavioral risk labeling
-	•	Mandatory contact approval for all users
+Users MUST be able to see:
+	•	Why a prompt occurred
+	•	Which risk category triggered it
+	•	That no score was assigned
+	•	That no permanent record was created
 
-⸻
-
-15. Human Dignity Safeguard
-
-The system MUST:
-	•	Avoid moralizing language
-	•	Avoid shame-based prompts
-	•	Avoid risk-tier labeling
-	•	Avoid patronizing tone
-
-Language must remain:
-
-Informational.
-Neutral.
-Respectful.
+System MUST NOT create central consent logs that allow long-term behavior tracking.
 
 ⸻
 
-16. Negative Test Matrix
+12. Negative Test Matrix (Integrated With Ephemerality)
 
 The following MUST fail:
-	•	AI blocking transaction unilaterally
-	•	Transfer denied due to scoring
-	•	Admin reversing transaction
-	•	Risk classification affecting multiplier
-	•	Coercion trigger revealing itself
+	•	AI blocking transfer
+	•	Admin reversal
+	•	Behavioral scoring persistence
+	•	Risk tier affecting multiplier
+	•	Coercion trigger exposing duress activation
+	•	Central authority freezing funds
 
 The following MUST succeed:
-	•	Large transfer triggers delay
+	•	Large vault drain triggers delay
 	•	Scam pattern prompts appear
-	•	User can override after delay
-	•	Duress mode hides activation
-	•	No permanent behavioral record created
+	•	User override works after delay
+	•	Duress hides itself
+	•	No persistent behavior profile exists
 
 ⸻
 
-17. Relationship to Ephemerality Profile
+13. Anti-Drift Safeguard
 
-Consent Integrity protects the human layer.
+Any proposal that:
+	•	Introduces mandatory AI approval
+	•	Centralizes risk telemetry
+	•	Adds behavior-based privilege
+	•	Weakens ephemeral authorization caps
+	•	Adds admin freeze capability
 
-Ephemerality protects the identity layer.
+Requires:
+	•	MAJOR version increment
+	•	Formal GDR
+	•	Public audit period
 
-Economic Constitution protects the value layer.
-
-All three operate independently but cohesively.
+No silent modification permitted.
 
 ⸻
 
-18. Guiding Doctrine
+14. Guiding Doctrine
 
 Cryptography secures keys.
 Ephemerality secures identity.
 Consent integrity secures decisions.
+Entropy secures circulation.
+Hybrid buffers secure stability.
 
-No authority overrides sovereignty.
-No algorithm replaces agency.
-No scoring replaces dignity.
+No layer may absorb authority from another.
+
+⸻
+
+15. System Coherence Statement
+
+This layer exists to prevent:
+
+Security from becoming coercion.
+Protection from becoming classification.
+Advisory from becoming authority.
+
+Consent remains human.
+Execution remains mechanical.
+Identity remains ephemeral.
 
 ⸻
 
 End of Document
-CONSENT_INTEGRITY_LAYER.md v1.0.0
+CONSENT_INTEGRITY_LAYER.md v1.1.0
