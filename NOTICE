@@ -1,0 +1,8 @@
+Fin-Co — Financial Coherence Architecture
+Copyright 2026 StegVerse-Labs
+
+This repository defines the canonical economic invariants,
+governance constraints, and protocol requirements for Fin-Co v1.0.0.
+
+Any implementation claiming compatibility with Fin-Co
+must adhere to the invariants defined in INVARIANTS.md.
