@@ -1,134 +1,64 @@
-StegVerse Versioning Covenant
+# Versioning Covenant — Fin-Co
 
-(Binding from v1.0 forward)
+This covenant prevents silent drift, opportunistic regression, and emergency capture.
 
-Purpose
+Fin-Co versions are structural commitments, not cosmetic releases.
 
-This covenant exists to prevent silent drift, opportunistic regression, and capture-by-emergency.
+---
 
-It defines what can, cannot, and must never change without an explicit version transition.
+## Version Categories
 
-This document is as important as the code.
+### PATCH (x.y.z → x.y.z+1)
+- Bug fixes
+- Clarifications
+- No invariant or governance change
 
-⸻
+### MINOR (x.y.z → x.y+1.0)
+- Structural clarification
+- Document reorganization
+- Enforcement refinement
+- No weakening of invariant content
 
-1. Semantic Versioning Meaning
+### MAJOR (x.y.z → x+1.0.0)
+Required if any change:
+- Modifies invariant language
+- Weakens protections
+- Alters emergency constraints
+- Changes governance authority thresholds
+- Reduces auditability
 
-StegVerse versions are moral + structural, not cosmetic.
-	•	PATCH (x.y.z → x.y.z+1)
-	•	Bug fixes
-	•	Performance improvements
-	•	No change to protections, invariants, or power distribution
-	•	MINOR (x.y.z → x.y+1.0)
-	•	New features
-	•	New markets or agents
-	•	Must strictly preserve all existing invariants
-	•	MAJOR (x.y.z → x+1.0.0)
-	•	Any change that alters:
-	•	Human protections
-	•	Market constraints
-	•	Agent permissions
-	•	Governance authority
-	•	Invariant definitions
+If uncertain → it is MAJOR.
 
-If you hesitate about which category applies → it’s MAJOR.
+---
 
-⸻
+## Retroactive Protection
 
-2. Changes That REQUIRE a Major Version
+Protections granted under prior versions may not be retroactively revoked.
 
-A major version is mandatory if ANY of the following occur:
-	•	Human solvency conditions are weakened
-	•	Survival rails interact with speculative rails in new ways
-	•	AI agents gain broader autonomy or pricing authority
-	•	Stall conditions are relaxed or extended
-	•	Governance override paths are simplified
-	•	Audit visibility is reduced
-	•	Time buffers are shortened
-	•	Any invariant is modified, merged, or removed
+---
 
-No exceptions. No urgency clause.
+## Emergency Discipline
 
-⸻
+Graceful Decline Exception (GDE) is governed by the Emergency Ratchet Protocol (ERP).
 
-3. Changes That Are FORBIDDEN Without a Major Version
+No emergency deviation may:
+- Permanently weaken Human Solvency
+- Suspend Capital Entropy
+- Remove auditability
+- Create undefined states
+- Become normalized without version review
 
-The following are explicitly prohibited under minor or patch releases:
-	•	Silent tuning of economic parameters
-	•	Redefining “essential goods”
-	•	Reclassifying markets to avoid constraints
-	•	Emergency exceptions that bypass invariants
-	•	Retroactive rule changes
-	•	“Temporary” measures without sunset logic
-	•	Narrative-only justifications without metrics
+---
 
-If it changes lived experience, it changes the version.
+## Drift Rule
 
-⸻
+Any cumulative change that materially alters lived experience requires version review.
 
-4. Protections That Are Retroactively Immutable
+Silent tuning is forbidden.
 
-Once granted, the following may not be removed retroactively:
-	•	Access to survival rails
-	•	Fiduciary constraints on agents
-	•	Audit rights
-	•	Appeal channels
-	•	Protection against forced participation
-	•	Protection against latency exploitation
+---
 
-Future versions may add constraints.
-They may not revoke these for past participants.
+## Integrity Clause
 
-⸻
-
-5. Drift Detection Rule
-
-Any cumulative change that:
-	•	Would take more than one paragraph to explain,
-	•	Or would surprise a reasonable participant,
-
-automatically triggers a version review.
-
-There is no such thing as “just tuning.”
-
-⸻
-
-6. Founder Irrelevance Clause
-
-This system must remain valid even if:
-	•	The original authors leave
-	•	The maintainers are hostile
-	•	The culture shifts
-	•	Public opinion turns
-
-No invariant relies on:
-	•	Good intentions
-	•	Moral superiority
-	•	Vigilance
-	•	Heroic leadership
-
-Only on enforcement.
-
-⸻
-
-7. Failure Mode Commitment (Graceful Decline)
-
-If StegVerse must shrink, it will do so by:
-	•	Reducing scope
-	•	Reducing speed
-	•	Reducing ambition
-
-It will never do so by:
-	•	Increasing extraction
-	•	Forcing participation
-	•	Weakening human protections
-
-Collapse is allowed. Dehumanization is not.
-
-⸻
-
-8. Ratification
-
-This covenant is ratified at v1.0.0 and applies to all future versions.
-
-Any violation invalidates the version label.
+If invariant protections are bypassed without version escalation,
+the version label is invalidated.
