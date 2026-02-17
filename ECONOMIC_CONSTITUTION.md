@@ -1,12 +1,8 @@
-StegVerse Economic Constitution
-
-(Front-Facing / Homepage-Ready)
-
-The StegVerse Economic Constitution
+# The StegVerse Economic Constitution
 
 A coherence-preserving market architecture for humans and AI
 
-Our Premise
+## Our Premise
 
 Modern economies demand uninterrupted growth while treating human limits as defects.
 That contradiction is no longer survivable.
@@ -19,9 +15,23 @@ This requires rules that do not collapse under scale, intelligence, or time.
 
 ⸻
 
-The Six Economic Invariants
+## Observer Recognition
 
-1. Human Solvency
+Fin-Co recognizes that time and knowledge acquire meaning only through observers.
+
+Observers are entities capable of bearing consequence within lived continuity.
+
+For the purposes of governance, time refers to the ongoing continuity within which such consequence unfolds. The system does not presume finality of collapse nor inevitability of permanence.
+
+All governance, modeling, and market structures exist to preserve the dignity, agency, and solvency of observers across generations.
+
+No abstraction, model, projection, or structural optimization shall be privileged over lived consequence.
+
+⸻
+
+## The Six Economic Invariants
+
+### 1. Human Solvency
 
 No human’s survival depends on uninterrupted economic growth.
 
@@ -30,7 +40,7 @@ Markets may stall. Humans must not.
 
 ⸻
 
-2. Capital Entropy
+### 2. Capital Entropy
 
 Economic advantage that does not re-enter productive retooling decays over time.
 
@@ -39,7 +49,7 @@ Capital must move, build, or fade.
 
 ⸻
 
-3. Temporal Coherence
+### 3. Temporal Coherence
 
 No actor may gain systemic advantage solely by operating faster than others.
 
@@ -49,7 +59,7 @@ Markets are buffered accordingly.
 
 ⸻
 
-4. Governance Legibility
+### 4. Governance Legibility
 
 All constraints, stalls, and interventions must be legible, auditable, and bounded.
 
@@ -58,7 +68,7 @@ Every pause has a reason, a record, and an end.
 
 ⸻
 
-5. Survival Separation
+### 5. Survival Separation
 
 Essential goods are insulated from speculative markets.
 
@@ -67,7 +77,7 @@ Speculation is optional. Survival is not.
 
 ⸻
 
-6. Non-Extractive Agenthood
+### 6. Non-Extractive Agenthood
 
 AI agents acting for humans are fiduciaries by default.
 
