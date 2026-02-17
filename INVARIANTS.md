@@ -60,5 +60,30 @@ All edge cases must resolve conservatively in favor of human protection.
 
 ---
 
-## Optional: Graceful Decline
-If the system fails, it must fail by reducing ambition—not by increasing extraction.
+## 12. Graceful Decline (Guarded)
+
+If the system must contract, it shall do so by reducing scope, speed, or ambition — 
+not by increasing extraction, forced participation, or human precarity.
+
+In situations that are materially unforeseeable at the time of ratification, 
+a temporary deviation may be enacted only under Strict Governance Authority 
+as defined below.
+
+Such deviation must:
+- Be explicitly declared as a Graceful Decline Exception (GDE)
+- Include measurable harm justification
+- Be time-bound with a non-renewable sunset clause
+- Require dual-channel authorization (protocol + human quorum)
+- Emit a public Governance Decision Record (GDR)
+- Automatically trigger a post-event audit review
+- Default to restoration of all protections upon sunset
+
+No Graceful Decline Exception may:
+- Permanently weaken Human Solvency
+- Collapse Survival Separation
+- Remove auditability
+- Create undefined states
+- Be renewed without a higher evidentiary threshold
+
+Collapse of ambition is allowed.
+Collapse of human dignity is not.
