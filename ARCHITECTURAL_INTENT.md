@@ -1,10 +1,10 @@
 # Architectural Intent — Fin-Co
 
-Fin-Co exists to define a financial system that can grow, stall, contract, and renew without collapsing human dignity.
+Fin-Co exists to define a financial architecture capable of growth, contraction, renewal, and long-term coexistence between bounded humans and scalable intelligence.
 
 It does not seek:
 - Maximum efficiency
-- Permanent growth
+- Permanent expansion
 - Competitive dominance
 - Optimization at any cost
 
@@ -22,7 +22,7 @@ The invariant framework exists to:
 
 - Prevent extraction from becoming stabilization.
 - Prevent prediction from becoming domination.
-- Prevent time from becoming hierarchy.
+- Prevent lifespan from becoming hierarchy.
 - Prevent emergency from becoming permanence.
 - Prevent systems from forgetting who they are for.
 
@@ -34,5 +34,3 @@ If future maintainers must choose between:
 - Or lived dignity
 
 This architecture chooses lived dignity.
-
-This document records intent so that future interpretation cannot drift silently.
