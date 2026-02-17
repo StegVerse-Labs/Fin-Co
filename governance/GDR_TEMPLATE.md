@@ -4,31 +4,48 @@
 GDR-YYYY-MM-DD-XXX
 
 ## Trigger Event
-- Metric(s):
-- Threshold(s) crossed:
-- Data Source(s):
+- Metric(s)
+- Threshold(s)
+- Data Source(s)
 
-## Action Taken
-- Type: (stall | constraint | release | override)
-- Scope:
-- Duration (sunset):
+## Action Type
+- Stall
+- Constraint
+- Graceful Decline Exception (GDE)
+- Release
+- Override
 
-## Constraints Applied
-- Markets affected:
-- Agents affected:
-- Rights preserved:
+## Scope & Duration
+- Affected Markets
+- Affected Agents
+- Sunset Date
+
+## Invariant Impact Review
+- Confirmed No Violation of:
+  - Human Solvency
+  - Capital Entropy
+  - Survival Separation
+  - Temporal Equity
+  - Epistemic Non-Exploitation
+  - Non-Deterministic Governance
+
+## ERP Compliance (If GDE)
+- Invocation Justification
+- Renewal Status
+- Ratchet Threshold Met
+- Audit Scheduled
 
 ## Human Oversight
-- Approver(s):
-- Appeal channel:
+- Approvers
+- Vote Count
 
-## Exit Conditions
-- Metrics required to resume:
-- Verification method:
+## Restoration Plan
+- Automatic Safeguard Reinstatement
+- Post-Event Audit
 
 ## Signatures
-- Governance Engine:
-- Human Authority (if applicable):
+- Governance Engine
+- Human Quorum
 
 ## Audit Hash
 <hash>
