@@ -1,82 +1,50 @@
-# Governance Policies & GDR Templates
+# Governance Policies — Fin-Co
 
-(Repo-Ready / Governance Layer)
+Governance exists to preserve invariants under pressure.
 
-Governance Policy: Economic Coherence
+---
 
-Scope
+## G-01: Temporal Parity
+Protected markets may not reward latency advantage.
 
-Applies to all StegVerse-governed markets, agents, and ledgers.
+---
 
-⸻
+## G-02: Stall Legitimacy
+Stalls must:
+- Cite measurable trigger conditions
+- Include sunset date
+- Emit GDR
 
-## Policy G-01: Temporal Parity
+---
 
-Rule:
-No governed market may require sub-human reaction time for fair participation.
+## G-03: Survival Rail Protection
+Essential goods may not be collateralized or speculated upon.
 
-Enforcement:
-	•	Batch clearing
-	•	Commit-reveal mechanisms
-	•	Execution delegation via constrained agents
+---
 
-Violation:
-Profit derived primarily from latency differentials.
+## G-04: AI Fiduciary Mandate
+AI agents must:
+- Declare scope
+- Remain revocable
+- Disclose value flows
+- Avoid hidden extraction
 
-⸻
+---
 
-## Policy G-02: Stall Legitimacy
+## G-05: Graceful Decline Exception (GDE)
 
-Rule:
-Production stalls may only occur when predefined triggers are met.
+GDE is governed by the Emergency Ratchet Protocol (ERP).
 
-Valid Triggers (example):
-	•	Supply chain failure indices
-	•	Safety incident thresholds
-	•	Energy scarcity bounds
-	•	Essential-goods inflation breaches
+Invocation requires:
+- Unforeseeable systemic threat
+- Measurable solvency risk
+- No invariant-compliant alternative
 
-Stall Requirements:
-	•	Signed trigger record
-	•	Sunset date
-	•	Exit conditions
+GDE must:
+- Be time-bound
+- Emit public GDR
+- Trigger audit
+- Preserve Capital Entropy
+- Restore protections automatically at sunset
 
-⸻
-
-## Policy G-03: Survival Rail Protection
-
-Rule:
-Essential goods must not be:
-	•	Liquidated
-	•	Collateralized
-	•	Priced by speculative instruments
-
-⸻
-
-## Policy G-04: AI Fiduciary Mandate
-
-Rule:
-Any AI acting on behalf of a human must:
-	•	Declare mandate scope
-	•	Enforce value-flow transparency
-	•	Be revocable at any time
-instruments
-
-⸻
-
-## Policy G-05: Graceful Decline Exception (GDE)
-
-A Graceful Decline Exception may only be invoked if:
-
-1. The triggering condition was not reasonably foreseeable at the time of version ratification.
-2. Human solvency is measurably threatened absent temporary deviation.
-3. No alternative compliant pathway exists.
-
-Authorization requires:
-- Protocol-level trigger confirmation
-- 2/3 human governance quorum
-- Public GDR issuance
-- Maximum 90-day sunset (non-renewable without supermajority 4/5 vote)
-- Automatic audit at expiration
-
-Failure to restore protections upon sunset invalidates the version label.
+Emergency authority cannot become normalization authority.
