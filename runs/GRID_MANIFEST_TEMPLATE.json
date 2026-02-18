@@ -1,0 +1,55 @@
+{
+  "run_id": "YYYYMMDD_HHMMSS_<git_sha>_<grid_version>",
+  "grid_version": "v1.0.0",
+  "certification_target": "A",
+  "git": {
+    "repo": "StegVerse-Labs/Fin-Co",
+    "commit_sha": "<git_sha>",
+    "branch": "<branch_name>"
+  },
+  "grid_config": {
+    "path": "runs/grid_config.json",
+    "sha256": "<sha256_of_grid_config>"
+  },
+  "scenario_order": "baseline_then_single_axis_then_pairs_then_full",
+  "monotonicity_assumption": true,
+  "seeding": {
+    "strategy": "coordinate_hash",
+    "base_seed": 1337,
+    "seed_derivation_note": "seed = hash(base_seed + scenario_id)"
+  },
+  "cohort_model": {
+    "description": "Heterogeneous archetype mix",
+    "archetype_mix": {
+      "A_sovereign_disciplined_pct": 20,
+      "B_average_pct": 40,
+      "C_high_volatility_pct": 20,
+      "D_opportunistic_pct": 10,
+      "E_external_disruptor_pct": 10
+    },
+    "regions_simulated": 3,
+    "notes": "Identity-blind, region-segmented buffers enabled"
+  },
+  "axes_definition_hash": "<sha256_of_axes_section>",
+  "phases": {
+    "deterministic_required": true,
+    "chaos_required": true,
+    "replay_validation_required": true
+  },
+  "thresholds_hash": "<sha256_of_thresholds_section>",
+  "windows": {
+    "arp_review_notice_hours": 72,
+    "arp_outcome_days": 14
+  },
+  "execution_environment": {
+    "runner_version": "v1.0.0",
+    "environment_note": "Deterministic simulation environment",
+    "timestamp_started": "<ISO8601>",
+    "operator": "<name_or_role>"
+  },
+  "status": {
+    "scenarios_expected": 1296,
+    "scenarios_completed": 0,
+    "halted_on_tier4": false
+  }
+}
