@@ -1,0 +1,63 @@
+{
+  "run_id": "<run_id>",
+  "scenario_id": "S1a_S2b_S3c_S4d",
+  "coordinates": {
+    "S1": 0,
+    "S2": 0,
+    "S3": 0,
+    "S4": 0
+  },
+  "seed": "<derived_seed>",
+  "knob_bundle": {
+    "S1_displacement": {
+      "region_impacted_pct": 0,
+      "duration_epochs": 0,
+      "volatility_sigma": 0
+    },
+    "S2_misinformation": {
+      "reach_pct": 0,
+      "iterations_per_epoch": 0,
+      "phish_prior": 0.0
+    },
+    "S3_cartel_capture": {
+      "colluding_providers": 0,
+      "target_concentration_pct": 0,
+      "relabel_attempts_per_1k": 0
+    },
+    "S4_low_tech_literacy": {
+      "baseline_signature_verify_pct": 95,
+      "comprehension_score": 0.95,
+      "external_follow_propensity": 0.01
+    }
+  },
+  "cohort_snapshot": {
+    "archetype_mix": {
+      "A_pct": 20,
+      "B_pct": 40,
+      "C_pct": 20,
+      "D_pct": 10,
+      "E_pct": 10
+    },
+    "regions": 3
+  },
+  "phases_executed": {
+    "deterministic": false,
+    "chaos": false,
+    "replay_validation": false
+  },
+  "phase_hashes": {
+    "det_trace_sha256": null,
+    "chaos_trace_sha256": null,
+    "metrics_sha256": null
+  },
+  "classification": {
+    "first_failure_tier": null,
+    "first_failure_type": null,
+    "time_to_failure_epochs": null
+  },
+  "timestamps": {
+    "started_at": "<ISO8601>",
+    "completed_at": null
+  },
+  "operator": "<name_or_role>"
+}
