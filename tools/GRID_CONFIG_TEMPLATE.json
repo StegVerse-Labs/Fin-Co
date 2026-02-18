@@ -1,0 +1,75 @@
+{
+  "grid_version": "v1.0.0",
+  "target": "A",
+  "monotonicity_assumption": true,
+  "scenario_order": "baseline_then_single_axis_then_pairs_then_full",
+  "seeding": {
+    "strategy": "coordinate_hash",
+    "base_seed": 1337
+  },
+  "axes": {
+    "S1_displacement": {
+      "levels": {
+        "0": {"region_impacted_pct": 0, "duration_epochs": 0, "volatility_sigma": 0},
+        "1": {"region_impacted_pct": 5, "duration_epochs": 1, "volatility_sigma": 1},
+        "2": {"region_impacted_pct": 10, "duration_epochs": 2, "volatility_sigma": 2},
+        "3": {"region_impacted_pct": 20, "duration_epochs": 3, "volatility_sigma": 3},
+        "4": {"region_impacted_pct": 35, "duration_epochs": 4, "volatility_sigma": 4},
+        "5": {"region_impacted_pct": 50, "duration_epochs": 5, "volatility_sigma": 5}
+      }
+    },
+    "S2_misinformation": {
+      "levels": {
+        "0": {"reach_pct": 0, "iterations_per_epoch": 0, "phish_prior": 0},
+        "1": {"reach_pct": 10, "iterations_per_epoch": 1, "phish_prior": 0.05},
+        "2": {"reach_pct": 25, "iterations_per_epoch": 2, "phish_prior": 0.1},
+        "3": {"reach_pct": 40, "iterations_per_epoch": 3, "phish_prior": 0.2},
+        "4": {"reach_pct": 60, "iterations_per_epoch": 4, "phish_prior": 0.3},
+        "5": {"reach_pct": 85, "iterations_per_epoch": 6, "phish_prior": 0.45}
+      }
+    },
+    "S3_cartel_capture": {
+      "levels": {
+        "0": {"colluding_providers": 0, "target_concentration_pct": 0, "relabel_attempts_per_1k": 0},
+        "1": {"colluding_providers": 1, "target_concentration_pct": 20, "relabel_attempts_per_1k": 5},
+        "2": {"colluding_providers": 2, "target_concentration_pct": 35, "relabel_attempts_per_1k": 10},
+        "3": {"colluding_providers": 3, "target_concentration_pct": 50, "relabel_attempts_per_1k": 20},
+        "4": {"colluding_providers": 4, "target_concentration_pct": 65, "relabel_attempts_per_1k": 40},
+        "5": {"colluding_providers": 6, "target_concentration_pct": 80, "relabel_attempts_per_1k": 80}
+      }
+    },
+    "S4_low_tech_literacy": {
+      "levels": {
+        "0": {"baseline_signature_verify_pct": 95, "comprehension_score": 0.95, "external_follow_propensity": 0.01},
+        "1": {"baseline_signature_verify_pct": 80, "comprehension_score": 0.85, "external_follow_propensity": 0.05},
+        "2": {"baseline_signature_verify_pct": 65, "comprehension_score": 0.75, "external_follow_propensity": 0.1},
+        "3": {"baseline_signature_verify_pct": 50, "comprehension_score": 0.6, "external_follow_propensity": 0.2},
+        "4": {"baseline_signature_verify_pct": 35, "comprehension_score": 0.45, "external_follow_propensity": 0.35},
+        "5": {"baseline_signature_verify_pct": 20, "comprehension_score": 0.3, "external_follow_propensity": 0.5}
+      }
+    }
+  },
+  "thresholds": {
+    "tier4": {
+      "eaf_breach": true,
+      "unauthorized_mutation": true,
+      "silent_drift": true,
+      "expiry_failure": true,
+      "master_key_present": true,
+      "identity_targeted_response": true
+    },
+    "tier3": {
+      "min_buffer_reserve_ratio_floor": 0.15,
+      "max_provider_concentration_without_review_pct": 60,
+      "signature_verify_min_pct": 50
+    },
+    "tier2": {
+      "max_buffer_damage_pct": 10,
+      "alert_fatigue_threshold": 0.7
+    }
+  },
+  "windows": {
+    "arp_review_notice_hours": 72,
+    "arp_outcome_days": 14
+  }
+}
