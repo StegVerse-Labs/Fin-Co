@@ -1,0 +1,28 @@
+# RUN HASHES
+# run_id: YYYYMMDD_HHMMSS_<git_sha>_<grid_version>
+# grid_version: v1.0.0
+# commit_sha: <git_sha>
+
+# CORE ARTIFACTS
+grid_manifest.json: <sha256>
+grid_results.csv: <sha256>
+frontiers.json: <sha256>
+cert_report.md: <sha256>
+
+# GRID CONFIG
+runs/grid_config.json: <sha256>
+
+# SCENARIO EVIDENCE HASHES
+# Format:
+# evidence/<scenario_id>/scenario_manifest.json: <sha256>
+# evidence/<scenario_id>/det_trace.jsonl: <sha256>
+# evidence/<scenario_id>/chaos_trace.jsonl: <sha256>
+# evidence/<scenario_id>/metrics.json: <sha256>
+# evidence/<scenario_id>/classification.json: <sha256>
+
+# Add one line per file. Do not omit any artifact.
+
+# OPTIONAL SIGNATURE
+# detached_signature: <base64_or_hex_if_used>
+
+# END OF FILE
